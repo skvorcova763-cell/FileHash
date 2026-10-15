@@ -29,7 +29,7 @@ jobs:
       - name: Build EXE
         shell: pwsh
         run: |
-          pyinstaller --onefile --windowed --name FileHashGUI --collect-all pygost app.py
+          pyinstaller --clean --onefile --windowed --name FileHashGUI --collect-all pygost --collect-all Crypto --hidden-import=Crypto app.py
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
