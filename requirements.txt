@@ -1,0 +1,2 @@
+pygost @ git+https://github.com/mosquito/pygost.git
+pycryptodome>=3.20
